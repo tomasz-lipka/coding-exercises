@@ -1,7 +1,10 @@
 /**
- * Write a method that returns 'Fizz' for multiples of three and 'Buzz' for the multiples of five.
- * For numbers which are multiples of both three and five return 'FizzBuzz'.
- * For numbers that are neither, return the input number.
+ * Exercise:
+ * Write a method which returns
+ * 'Fizz' if a number is dividable by 3
+ * 'Buzz' if a number is dividable by 5
+ * 'FizzBuzz' if a number is dividable by 3 and 5
+ * The number if it's not dividable by 3 nor 5
  */
 public class FizzBuzz {
 

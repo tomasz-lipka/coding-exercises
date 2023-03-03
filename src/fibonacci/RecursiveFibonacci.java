@@ -1,11 +1,11 @@
 package fibonacci;
 
 /**
- * Returns the n-th element of the Fibonacci Sequence.
- * The Fibonacci Sequence is the series of numbers in which each number is the sum of the two preceding ones.
- * Few first values:
+ * Exercise:
+ * Write a method which returns the n-th element of the Fibonacci Sequence.
+ * Few first values of the Fibonacci Sequence:
  * 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
- * Assuming that indexes start at zero: fibonacci(0) = 0, ..., fibonacci(6) = 8, ...
+ * Example: fibonacci(0) = 0, ..., fibonacci(6) = 8, ...
  * Implemented by use of a recurrent solution.
  */
 public class RecursiveFibonacci {
