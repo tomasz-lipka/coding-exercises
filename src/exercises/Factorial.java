@@ -1,3 +1,5 @@
+package exercises;
+
 /**
  * Exercise:
  * Implement a method which calculates the factorial of a given number.

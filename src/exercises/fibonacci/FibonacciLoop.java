@@ -1,11 +1,11 @@
-package fibonacci;
+package exercises.fibonacci;
 
 /**
  * Exercise:
  * Write a method which returns the n-th element of the Fibonacci Sequence.
  * Few first values of the Fibonacci Sequence:
  * 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
- * Example: fibonacci(0) = 0, ..., fibonacci(6) = 8, ...
+ * Example: exercises.fibonacci(0) = 0, ..., exercises.fibonacci(6) = 8, ...
  * Implemented by use of a loop solution.
  */
 public class FibonacciLoop {

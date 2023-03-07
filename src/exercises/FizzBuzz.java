@@ -1,9 +1,11 @@
+package exercises;
+
 /**
  * Exercise:
  * Write a method which returns
  * 'Fizz' if a number is dividable by 3
  * 'Buzz' if a number is dividable by 5
- * 'FizzBuzz' if a number is dividable by 3 and 5
+ * 'exercises.FizzBuzz' if a number is dividable by 3 and 5
  * The number if it's not dividable by 3 nor 5
  */
 public class FizzBuzz {
@@ -30,7 +32,7 @@ public class FizzBuzz {
         FizzBuzz fizzBuzz = new FizzBuzz();
         System.out.println(fizzBuzz.fizzBuzz(3)); //Fizz
         System.out.println(fizzBuzz.fizzBuzz(5)); //Buzz
-        System.out.println(fizzBuzz.fizzBuzz(15)); //FizzBuzz
+        System.out.println(fizzBuzz.fizzBuzz(15)); //exercises.FizzBuzz
         System.out.println(fizzBuzz.fizzBuzz(1)); //1
     }
 }

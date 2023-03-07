@@ -1,3 +1,5 @@
+package exercises;
+
 /**
  * Exercise:
  * Check if a given word is a palindrome
