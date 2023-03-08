@@ -1,9 +1,9 @@
-package designpatterns.factory.model;
+package designpatterns.creational.factory.model;
 
 public class ApocalypseNow implements Movie {
 
     @Override
-    public void build() {
+    public void play() {
         System.out.println("This is the 'Apocalypse Now' movie!");
     }
 }

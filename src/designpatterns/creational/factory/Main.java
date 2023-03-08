@@ -1,9 +1,9 @@
-package designpatterns.factory;
+package designpatterns.creational.factory;
 
-import designpatterns.factory.factory.ApocalypseNowFactory;
-import designpatterns.factory.factory.InglouriousBasterdsFactory;
-import designpatterns.factory.factory.MovieFactory;
-import designpatterns.factory.model.Movie;
+import designpatterns.creational.factory.factories.ApocalypseNowFactory;
+import designpatterns.creational.factory.factories.InglouriousBasterdsFactory;
+import designpatterns.creational.factory.factories.MovieFactory;
+import designpatterns.creational.factory.model.Movie;
 
 public class Main {
     public static void main(String[] args) {

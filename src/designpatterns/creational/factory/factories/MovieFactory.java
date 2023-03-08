@@ -1,12 +1,12 @@
-package designpatterns.factory.factory;
+package designpatterns.creational.factory.factories;
 
-import designpatterns.factory.model.Movie;
+import designpatterns.creational.factory.model.Movie;
 
 public abstract class MovieFactory {
 
     public Movie create() {
         Movie movie = createMovie();
-        movie.build();
+        movie.play();
         return movie;
     }
 
