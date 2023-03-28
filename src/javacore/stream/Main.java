@@ -6,6 +6,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+/**
+ * Playing with streams.
+ */
 class Main {
 
     public static void main(String[] args) {

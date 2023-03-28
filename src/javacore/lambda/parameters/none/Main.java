@@ -1,6 +1,10 @@
 package javacore.lambda.parameters.none;
 
-class Lambda {
+/**
+ * Playing with a lambda no parameter implementation.
+ * () -> ...
+ */
+class Main {
 
     public static void main(String[] args) {
         Kite kite = new Kite();

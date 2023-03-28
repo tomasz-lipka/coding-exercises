@@ -1,6 +1,9 @@
 package javacore.lambda.returnvalue;
 
-class Lambda {
+/**
+ * Playing with a lambda implementation which returns a value
+ */
+class Main {
 
     public static void main(String[] args) {
         Kite kite = new Kite();

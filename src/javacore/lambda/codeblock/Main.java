@@ -1,6 +1,9 @@
 package javacore.lambda.codeblock;
 
-class Lambda {
+/**
+ * Playing with a lambda code-block implementation.
+ */
+class Main {
 
     public static void main(String[] args) {
         Kite kite = new Kite();

@@ -1,6 +1,10 @@
 package javacore.lambda.parameters.one;
 
-class Lambda {
+/**
+ * Playing with a lambda single parameter implementation.
+ * n -> ...
+ */
+class Main {
 
     public static void main(String[] args) {
         Kite kite = new Kite();

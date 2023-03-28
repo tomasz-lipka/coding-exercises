@@ -1,6 +1,10 @@
 package javacore.lambda.parameters.two;
 
-class Lambda {
+/**
+ * Playing with a lambda multiple parameter implementation.
+ * (x, y) -> ...
+ */
+class Main {
 
     public static void main(String[] args) {
         Kite kite = new Kite();
