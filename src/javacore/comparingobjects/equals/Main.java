@@ -1,9 +1,7 @@
 package javacore.comparingobjects.equals;
 
 /**
- * Result is false.
- * Because Cup uses the default implementation of equals() from the Object class.
- * They have two different memory locations.
+ * Exercise comparing two objects using equals().
  */
 public class Main {
     public static void main(String[] args) {

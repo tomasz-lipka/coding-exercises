@@ -1,7 +1,7 @@
 package javacore.comparingobjects.string;
 
 /**
- * Exercise comparing the memory location of string object using ==
+ * Exercise comparing the memory location of String objects using ==
  */
 public class StringMemoryLocation {
 
