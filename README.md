@@ -28,3 +28,4 @@ Each exercise is group in a package and has its Main method to invoke it.
   - Exercises using Lambdas
   - Exercises using Records
   - Exercises using Streams
+  - try-with-resources and AutoCloseable interface exercise
