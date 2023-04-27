@@ -25,7 +25,8 @@ Each exercise is group in a package and has its Main method to invoke it.
   - Comparing of objects
     - Comparing custom objects using equals
     - Comparing String objects
-  - Exercises using Lambdas
-  - Exercises using Records
-  - Exercises using Streams
-  - try-with-resources and AutoCloseable interface exercise
+  - Lambda
+  - Record
+  - Stream
+  - try-with-resources and AutoCloseable interface
+  - Consumer functional interface and forEach iteration
