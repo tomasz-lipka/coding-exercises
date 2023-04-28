@@ -30,3 +30,4 @@ Each exercise is group in a package and has its Main method to invoke it.
   - Stream
   - try-with-resources and AutoCloseable interface
   - Consumer functional interface and forEach iteration
+  - Function functional interface
