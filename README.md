@@ -1,6 +1,5 @@
 # Coding exercises
-This project contains simple coding exercises implemented to practice Java.
-Each exercise is group in a package and has its Main method to invoke it.
+This project contains simple coding exercises. Each exercise is group in a package.
 
 
 ## List of exercises
@@ -11,6 +10,7 @@ Each exercise is group in a package and has its Main method to invoke it.
     - Loop solution
   - Fizz Buzz
   - Palindrome checker
+  - Collatz conjecture (C language)
 - **Design patterns**
   - Behavioral
     - Observer
