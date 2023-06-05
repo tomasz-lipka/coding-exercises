@@ -1,5 +1,5 @@
 # Coding exercises
-This project contains simple coding exercises. Each exercise is group in a package.
+This project contains simple coding exercises. Each exercise is grouped in a package.
 
 
 ## List of exercises
