@@ -31,3 +31,5 @@ This project contains simple coding exercises. Each exercise is grouped in a pac
   - try-with-resources and AutoCloseable interface
   - Consumer functional interface and forEach iteration
   - Function functional interface
+- **Snippets**
+  - Write reversed file (C language)
