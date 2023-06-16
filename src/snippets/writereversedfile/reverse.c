@@ -20,7 +20,7 @@
 #include <stdlib.h>
 
 int const ARGC = 4;
-char const *output_file_name = "out.txt";
+char const *OUTPUT_FILE_NAME = "out.txt";
 
 void reverse(FILE *in_file, FILE *out_file, int start_from, int chunk_size);
 bool is_past_start(long position, int start_from, int chunk_size);
@@ -33,27 +33,27 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    char const *input_file = argv[1];
-    int const chunk_size = atoi(argv[2]);
-    int const start_from = atoi(argv[3]);
+    char const *INPUT_FILE = argv[1];
+    int const CHUNK_SIZE = atoi(argv[2]);
+    int const START_FROM = atoi(argv[3]);
 
-    if (chunk_size == 0 || start_from == 0)
+    if (CHUNK_SIZE == 0 || START_FROM == 0)
     {
         printf("Wrong <chunk size of chars> and/or <start from char> argument\n");
     }
 
-    FILE *in_file = fopen(input_file, "r");
+    FILE *in_file = fopen(INPUT_FILE, "r");
     if (in_file == NULL)
     {
         printf("Wrong input file\n");
         return 1;
     }
 
-    FILE *out_file = fopen(output_file_name, "w");
+    FILE *out_file = fopen(OUTPUT_FILE_NAME, "w");
     if (out_file == NULL)
         return 1;
 
-    reverse(in_file, out_file, start_from, chunk_size);
+    reverse(in_file, out_file, START_FROM, CHUNK_SIZE);
 
     fclose(in_file);
     fclose(out_file);
@@ -61,19 +61,19 @@ int main(int argc, char *argv[])
 
 void reverse(FILE *in_file, FILE *out_file, int start_from, int chunk_size)
 {
-    size_t const element_size_in_bytes = sizeof(char) * chunk_size;
-    int const num_of_elements = 1;
-    int const two_chunks_sizes = 2 * chunk_size;
+    size_t const ELEMENT_SIZE_IN_BYTES = sizeof(char) * chunk_size;
+    int const NUM_OF_ELEMENTS = 1;
+    int const TWO_CHUNK_SIZES = 2 * chunk_size;
     long position = 0;
     char buffer[chunk_size];
 
     fseek(in_file, -chunk_size, SEEK_END);
     do
     {
-        fread(buffer, element_size_in_bytes, num_of_elements, in_file);
-        fwrite(&buffer, element_size_in_bytes, num_of_elements, out_file);
+        fread(buffer, ELEMENT_SIZE_IN_BYTES, NUM_OF_ELEMENTS, in_file);
+        fwrite(&buffer, ELEMENT_SIZE_IN_BYTES, NUM_OF_ELEMENTS, out_file);
         position = ftell(in_file);
-        fseek(in_file, -two_chunks_sizes, SEEK_CUR);
+        fseek(in_file, -TWO_CHUNK_SIZES, SEEK_CUR);
 
     } while (is_past_start(position, start_from, chunk_size));
 }
