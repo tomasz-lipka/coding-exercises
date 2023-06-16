@@ -8,7 +8,7 @@
  * input: OMMIT-MEchunk1chunk2chunk3chunk4
  * output: chunk4chunk3chunk2chunk1
  *
- *  Example 2
+ * Example 2
  * -----------
  * ./reverse samples/test-input-2.txt 1 1
  * input: 123456
