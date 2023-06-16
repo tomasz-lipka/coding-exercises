@@ -4,13 +4,13 @@
  *
  * Example 1
  * -----------
- * ./reverse test-input-1.txt 6 9
+ * ./reverse samples/test-input-1.txt 6 9
  * input: OMMIT-MEchunk1chunk2chunk3chunk4
  * output: chunk4chunk3chunk2chunk1
  *
  *  Example 2
  * -----------
- * ./reverse test-input-2.txt 1 1
+ * ./reverse samples/test-input-2.txt 1 1
  * input: 123456
  * output: 654321
  */
