@@ -33,3 +33,4 @@ This project contains simple coding exercises. Each exercise is grouped in a pac
   - Function functional interface
 - **Snippets**
   - Write reversed file (C language)
+  - Singly linked list (C language)
