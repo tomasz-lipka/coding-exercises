@@ -13,7 +13,6 @@ import java.util.Scanner;
 public class Factorial {
 
     public static void main(String[] args) {
-
         int number;
         Scanner scanner = new Scanner(System.in);
         while (true) {
