@@ -1,28 +1,45 @@
 package brainteasers.factorial;
 
+import java.util.Scanner;
+
 /**
  * Exercise:
  * Implement a method which calculates the factorial of a given number.
  * Example:
+ * 1! = 1
+ * 2! = 1*2 =2
  * 3! = 1*2*3 = 6
- * 4! = 24
- * 7! = 5040
  */
 public class Factorial {
 
-    public int calculate(int x) {
-        return factorial(x, x);
-    }
-
-    private int factorial(int x, int counter) {
-        counter--;
-        if (counter == 1) {
-            return x;
-        }
-        return factorial(x * counter, counter);
-    }
-
     public static void main(String[] args) {
-        System.out.println(new Factorial().calculate(7));
+
+        int number;
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            System.out.print("Enter number: ");
+            String s = scanner.nextLine();
+            try {
+                number = Integer.parseInt(s);
+                if (number > 12 || number < 0) {
+                    System.out.println("Number must in range from 0 to 12.");
+                    continue;
+                }
+                scanner.close();
+                break;
+            } catch (NumberFormatException e) {
+                System.out.println("Not integer.");
+            }
+        }
+
+        int result = new Factorial().factorial(number);
+        System.out.printf("Factorial of %s is %s\n", number, result);
+    }
+
+    private int factorial(int n) {
+        if (n == 0) {
+            return 1;
+        }
+        return n * factorial(n - 1);
     }
 }
