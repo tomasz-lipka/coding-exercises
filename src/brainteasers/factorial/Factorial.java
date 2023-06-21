@@ -22,13 +22,13 @@ public class Factorial {
             try {
                 number = Integer.parseInt(s);
                 if (number > 12 || number < 0) {
-                    System.out.println("Number must in range from 0 to 12.");
+                    System.out.println("Number must be in range from 0 to 12");
                     continue;
                 }
                 scanner.close();
                 break;
             } catch (NumberFormatException e) {
-                System.out.println("Not integer.");
+                System.out.println("Not integer");
             }
         }
 
