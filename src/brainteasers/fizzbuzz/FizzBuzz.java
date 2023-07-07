@@ -1,38 +1,51 @@
 package brainteasers.fizzbuzz;
 
+import java.util.ArrayList;
+
 /**
  * Exercise:
  * Write a method which returns
  * 'Fizz' if a number is dividable by 3
  * 'Buzz' if a number is dividable by 5
- * 'exercises.FizzBuzz' if a number is dividable by 3 and 5
+ * 'FizzBuzz' if a number is dividable by 3 and 5
  * The number if it's not dividable by 3 nor 5
  */
 public class FizzBuzz {
 
-    public String fizzBuzz(Integer i) {
-        StringBuilder stringBuilder = new StringBuilder();
-        if (dividesBy(i, 3)) {
-            stringBuilder.append("Fizz");
-        }
-        if (dividesBy(i, 5)) {
-            stringBuilder.append("Buzz");
-        }
-        if (!(dividesBy(i, 3) || dividesBy(i, 5))) {
-            stringBuilder.append(i);
-        }
-        return stringBuilder.toString();
+    private ArrayList<Fizzbuzzable> fizzbuzzables = new ArrayList<Fizzbuzzable>();
+
+    public void add(int divider, String expression) {
+        fizzbuzzables.add(new Fizzbuzzable(divider, expression));
     }
 
-    private boolean dividesBy(int number, int divider) {
-        return number % divider == 0;
+    public String fizzBuzz(int n) {
+        String s = "";
+
+        for (Fizzbuzzable f : fizzbuzzables) {
+            s += f.execute(n);
+        }
+
+        if (s.isEmpty()) {
+            s = Integer.toString(n);
+        }
+        return s;
     }
 
     public static void main(String[] args) {
-        FizzBuzz fizzBuzz = new FizzBuzz();
-        System.out.println(fizzBuzz.fizzBuzz(3)); //Fizz
-        System.out.println(fizzBuzz.fizzBuzz(5)); //Buzz
-        System.out.println(fizzBuzz.fizzBuzz(15)); //exercises.FizzBuzz
-        System.out.println(fizzBuzz.fizzBuzz(1)); //1
+        FizzBuzz fb = new FizzBuzz();
+        fb.add(3, "Fizz");
+        fb.add(5, "Buzz");
+
+        // expected: Fizz
+        System.out.println(fb.fizzBuzz(3));
+
+        // expected: Buzz
+        System.out.println(fb.fizzBuzz(5));
+
+        // expected: FizzBuzz
+        System.out.println(fb.fizzBuzz(15));
+
+        // expected: 8
+        System.out.println(fb.fizzBuzz(8));
     }
 }
