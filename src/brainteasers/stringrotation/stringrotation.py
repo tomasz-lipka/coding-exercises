@@ -10,7 +10,7 @@ is a rotation of uerbottlewat ).
 import unittest
 
 
-def isRotation(s1, s2):
+def is_rotation(s1, s2):
     if (len(s1) != len(s2)):
         return False
     return s1 in s2 + s2
@@ -18,12 +18,12 @@ def isRotation(s1, s2):
 
 class TestIsRotation(unittest.TestCase):
     def test_rotation_true(self):
-        self.assertTrue(isRotation('rot', 'otr'))
-        self.assertTrue(isRotation('waterbottle', 'erbottlewat'))
+        self.assertTrue(is_rotation('rot', 'otr'))
+        self.assertTrue(is_rotation('waterbottle', 'erbottlewat'))
 
     def test_rotation_false(self):
-        self.assertFalse(isRotation('r', 'otr'))
-        self.assertFalse(isRotation('rot', 'otrotr'))
+        self.assertFalse(is_rotation('r', 'otr'))
+        self.assertFalse(is_rotation('rot', 'otrotr'))
 
 
 if __name__ == '__main__':
