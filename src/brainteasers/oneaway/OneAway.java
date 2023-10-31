@@ -40,7 +40,7 @@ class OneAway {
                 if (tooMuchEdits(edits)) {
                     return false;
                 }
-                str1 = addChar(str1, '-', i);
+                str1 = addChar(str1, ' ', i);
             }
         }
         return true;
