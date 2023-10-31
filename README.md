@@ -11,6 +11,7 @@ This project contains simple coding exercises. Each exercise is grouped in a pac
   - Fizz Buzz
   - Palindrome checker
   - Collatz conjecture (C language)
+  - One Away
 - **Design patterns**
   - Behavioral
     - Observer
