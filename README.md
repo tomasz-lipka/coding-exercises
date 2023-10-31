@@ -4,15 +4,16 @@ This project contains simple coding exercises. Each exercise is grouped in a pac
 
 ## List of exercises
 - **Brain teasers**
-  - Factorial
-  - Fibonacci
+  - Factorial (Java)
+  - Fibonacci (Java)
     - Recursive solution
     - Loop solution
-  - Fizz Buzz
-  - Palindrome checker
+  - Fizz Buzz (Java)
+  - Palindrome checker (Java)
   - Collatz conjecture (C language)
-  - One Away
-- **Design patterns**
+  - One Away (Java)
+  - String Rotation (Python)
+- **Design patterns** (Java)
   - Behavioral
     - Observer
     - Strategy
