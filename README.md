@@ -13,6 +13,7 @@ This project contains simple coding exercises. Each exercise is grouped in a pac
   - Collatz conjecture (C language)
   - One Away (Java)
   - String Rotation (Python)
+  - URLify (Python)
 - **Design patterns** (Java)
   - Behavioral
     - Observer
